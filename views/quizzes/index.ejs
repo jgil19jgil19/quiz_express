@@ -1,0 +1,9 @@
+<section>
+    <h2>Lista de Quizzes</h2>
+    <ol>
+    <% for (var i in quizzes) { %>
+        <% let quiz = quizzes[i]; %>
+        <li><%= quiz.question %>: <%= quiz.answer %>;</li>
+    <% } %>
+    </ol>
+</section>
